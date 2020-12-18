@@ -1,0 +1,158 @@
+.hero__container {
+    height: 750px;
+    background: url(./image/hero.jpg);
+    background-position: 0% 50%;
+    background-size: cover;
+}
+
+.hero__logo {
+    z-index: 2;
+    position: absolute;
+}
+
+.hero__logo img {
+    width: 80px;
+    margin: 20px 0 0 20px;
+}
+
+.hero__overlay {
+    background-color: #004a75;
+    opacity: 0.75;
+    width: 100%;
+    height: 750px;
+    z-index: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__text {
+    z-index: 2;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero__text h1 {
+    font-weight: 200;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero__text h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.hero__text p {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1440px) {
+    .hero__container {
+        height: 630px;
+        background-position: 0% 40%;
+    }
+
+    .hero__overlay {
+        height: 630px;
+    }
+
+    .hero__logo img {
+        width: 70px;
+    }
+
+    .hero__text h1 {
+        font-size: 2.7rem;
+    }
+
+    .hero__text h2 {
+        font-size: 1.7rem;
+    }
+
+    .hero__text p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .hero__container {
+        height: 550px;
+        background-position: 0% 40%;
+    }
+
+    .hero__overlay {
+        height: 550px;
+    }
+
+    .hero__logo img {
+        width: 60px;
+    }
+
+    .hero__text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero__text h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero__text p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .hero__container {
+        height: 550px;
+        background-position: 0% 40%;
+    }
+
+    .hero__overlay {
+        height: 550px;
+    }
+
+    .hero__logo img {
+        width: 45px;
+    }
+
+    .hero__text h1 {
+        font-size: 2rem;
+    }
+
+    .hero__text h2 {
+        font-size: 1.6rem;
+    }
+
+    .hero__text p {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero__container {
+        height: 550px;
+        background-position: 0% 40%;
+    }
+
+    .hero__overlay {
+        height: 550px;
+    }
+
+    .hero__text p {
+        font-size: 1.25rem;
+    }
+
+    .hero__text {
+        padding: 0 20px 0 20px;
+    }
+}

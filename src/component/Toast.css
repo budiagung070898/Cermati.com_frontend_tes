@@ -1,0 +1,175 @@
+.toast__container {
+    width: 850px;
+    height: 235px;
+    background-color: #007bc1;
+    display: block;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    bottom: 0;
+    animation: open 1.3s ease-in-out forwards;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.9;
+}
+
+.toast__close {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 12px;
+}
+
+.toast__close p {
+    cursor: pointer;
+}
+
+.none {
+    display: none;
+}
+
+.toast__close p:hover {
+    color: #cc6600;
+}
+
+.toast__content {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 15px 30px;
+}
+
+.toast__content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.toast__content p {
+    font-weight: 100;
+    font-size: 1.38rem;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 650px;
+    height: 30px;
+}
+
+.but2 {
+    width: 120px;
+    height: 30px;
+    background-color: #ff8000;
+    margin-left: 5px;
+}
+
+.but2:hover {
+    background-color: #cc6600;
+    color: white;
+}
+@keyframes open {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@media screen and (max-width: 1680px) {
+    .toast__container {
+        width: 820px;
+    }
+    .toast__content p {
+        font-size: 1.3rem;
+    }
+    input {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .toast__container {
+        width: 700px;
+    }
+    .toast__content h1 {
+        font-size: 1.8rem;
+    }
+    .toast__content p {
+        font-size: 1.1rem;
+    }
+    input {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .toast__container {
+        width: 620px;
+    }
+    .toast__content h1 {
+        font-size: 1.7rem;
+    }
+    .toast__content p {
+        font-size: 1rem;
+    }
+    input {
+        width: 450px;
+    }
+    .but2 {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .toast__container {
+        width: 470px;
+        height: 200px;
+    }
+    .toast__content h1 {
+        font-size: 1.4rem;
+    }
+    .toast__content p {
+        font-size: .7rem;
+    }
+    input {
+        width: 300px;
+    }
+    .but2 {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .toast__container {
+        width: 280px;
+        height: 220px;
+    }
+    .toast__close {
+        font-size: .5rem;
+        margin-bottom: 0px;
+    }
+    .toast__content {
+        padding: 0px 20px 5px 10px;
+    }
+    .toast__content h1 {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+    .toast__content p {
+        font-size: .75rem;
+        margin-bottom: 10px;
+    }
+    .toast__search {
+        display: flex;
+        flex-direction: column;
+    }
+    input {
+        width: 220px;
+        margin-bottom: 5px;
+        height: 25px;
+    }
+    .but2 {
+        width: 220px;
+        margin-left: 0;
+        height: 25px;
+    }
+}

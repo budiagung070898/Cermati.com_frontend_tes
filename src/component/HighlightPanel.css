@@ -1,0 +1,213 @@
+.panel__container {
+    height: 900px;
+    background-color: #e5e5e5;
+    display: flex;
+    flex-direction: column;
+}
+
+.panel__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.panel__text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.panel__text h1 {
+    font-weight: 300;
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.panel__text p {
+    font-weight: 300;
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+}
+
+.panel__content {
+    height: 500px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.panel__content-wrap {
+    height: 230px;
+    width: 600px;
+    border: 1px solid grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.panel__content-wrap h1 {
+    font-weight: 300;
+    font-size: 2rem;
+    padding: 20px 20px 0 20px;
+}
+
+.panel__content-wrap p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding: 15px 20px 0 20px;
+    line-height: 1.3;
+}
+
+@media screen and (max-width: 1850px) {
+    .panel__text {
+        width: 60%;
+    }
+    .panel__content-wrap {
+        width: 490px;
+    }
+    .panel__content-wrap h1 {
+        font-size: 1.8rem;
+    }
+    .panel__content-wrap p {
+        font-size: 1.1rem;
+        padding: 15px 10px 0 20px;
+    }
+}
+
+@media screen and (max-width: 1510px) {
+    .panel__text {
+        width: 65%;
+    }
+    .panel__text h1{
+        font-size: 2.8rem;
+    }
+    .panel__text p {
+        font-size: 1.5rem;
+    }
+    .panel__content-wrap {
+        width: 450px;
+        height: 200px;
+    }
+    .panel__content-wrap h1 {
+        font-size: 1.6rem;
+    }
+    .panel__content-wrap p {
+        font-size: 1rem;
+        padding: 15px 10px 0 20px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .panel__container{
+        height: 800px;
+    }
+    .panel__content {
+        height: 420px;
+    }
+    .panel__text {
+        width: 50%;
+    }
+    .panel__text h1{
+        font-size: 2.4rem;
+    }
+    .panel__text p {
+        font-size: 1.2rem;
+    }
+    .panel__content-wrap {
+        width: 420px;
+        height: 180px;
+    }
+    .panel__content-wrap h1 {
+        font-size: 1.4rem;
+    }
+    .panel__content-wrap p {
+        font-size: 0.8rem;
+        padding: 15px 10px 0 20px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .panel__container{
+        height: 620px;
+    }
+    .panel__content {
+        height: 360px;
+        margin-top: 30px;
+    }
+    .panel__text {
+        width: 50%;
+    }
+    .panel__header{
+        margin-top: 50px;
+    }
+    .panel__text h1{
+        font-size: 2.2rem;
+    }
+    .panel__text p {
+        font-size: 1.05rem;
+    }
+    .panel__content-wrap {
+        width: 390px;
+        height: 160px;
+    }
+    .panel__content-wrap h1 {
+        font-size: 1.4rem;
+    }
+    .panel__content-wrap p {
+        font-size: 0.8rem;
+        padding: 15px 10px 0 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .panel__content-wrap {
+        width: 90%;
+        height: 90%;
+    }
+    .panel__content{
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .panel__text {
+        width: 80%;
+    }
+    .panel__container {
+        height: 900px;
+    }
+    .panel__content-wrap {
+        width: 98%;
+        height: 200px;
+    }
+    .panel__content {
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .panel__text {
+        width: 90%;
+    }
+    .panel__container {
+        height: 1400px;
+    }
+    .panel__content-wrap {
+        width: 90%;
+        height: 160px;
+    }
+    .panel__content {
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-columns: auto;
+        grid-gap: 20px;
+        justify-items: center;
+    }
+}
